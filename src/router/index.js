@@ -19,10 +19,15 @@ const router = createRouter({
         }, {
             path: '/dashboard',
             name: 'dashboard',
-            component: DashboardView
+            component: DashboardView,
+            meta: {
+                requiresAuth: true
+            }
         }
     ]
 })
+
+
 
 
 export default router;

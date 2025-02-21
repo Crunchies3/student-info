@@ -13,12 +13,25 @@
       </b-card>
     </b-container>
   </div>
+
+
+
+  <div @click="logout" class="btn btn-primary">logout</div>
 </template>
 
 <script>
 export default {
   name: "Dashboard",
 };
+localStorage.removeItem("authToken");
+
+
+const logout = () => {
+  console.log("nigana naaa");
+  localStorage.removeItem("authToken");
+  router.push("/");
+};
+
 </script>
 
 <style scoped>
