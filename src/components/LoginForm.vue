@@ -13,8 +13,14 @@ const form = reactive({
 const handleSubmit = async () => {
     try {
         const response = await axios.post('http://192.168.1.102:8000/api/login', form);
-        console.log(response.data);
-        router.push('/dashboard');
+        if (response.status === 200 && response.data.message === 'Login successful') {
+            localStorage.setItem('authToken', response.data.token);
+            console.log();
+
+            console.log("mobalhin naaaa");
+            router.push('/dashboard');
+        }
+
     } catch (error) {
         console.error(error);
     }

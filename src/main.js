@@ -8,9 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 
 import DataTable from 'datatables.net-vue3';
-import DataTablesCore from 'datatables.net-dt';
-
-
+import DataTablesCore from 'datatables.net-bs5';
 
 
 const app = createApp(App)
