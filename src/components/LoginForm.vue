@@ -2,6 +2,7 @@
 import { RouterLink } from 'vue-router';
 import axios from 'axios';
 import { reactive } from 'vue';
+import router from '@/router';
 
 
 const form = reactive({
@@ -11,12 +12,14 @@ const form = reactive({
 
 const handleSubmit = async () => {
     try {
-        const response = await axios.post('http://localhost:3000/login', form);
+        const response = await axios.post('http://192.168.1.102:8000/api/login', form);
         console.log(response.data);
+        router.push('/dashboard');
     } catch (error) {
         console.error(error);
     }
 }
+
 
 </script>
 
