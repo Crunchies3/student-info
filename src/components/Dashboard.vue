@@ -5,9 +5,6 @@
 
     <!-- Subtitle (Email Address) -->
     <h5 class="text-muted">your-email@example.com</h5>
-
-    <!-- DataTable Section (Placeholder) -->
-
   </div>
 
 
@@ -20,7 +17,7 @@
 
 import router from '@/router';
 
-const name = 'Dashboard';
+npm install primevue @primeuix/themesconst name = 'Dashboard';
 
 const logout = () => {
   console.log("nigana naaa");
