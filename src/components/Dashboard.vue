@@ -17,7 +17,7 @@
 
 import router from '@/router';
 
-npm install primevue @primeuix/themesconst name = 'Dashboard';
+const name = 'Dashboard';
 
 const logout = () => {
   console.log("nigana naaa");
